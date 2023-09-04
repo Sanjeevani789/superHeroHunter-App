@@ -5,8 +5,8 @@ if (localStorage.getItem("favouritesList") == null) {
 
 async function fetchMoviesFromApi(url, value) {
     const response = await fetch(`${url + value}`);
-    const meals = await response.json();
-    return meals;
+    const data = await response.json();
+    return data;
 }
 
 // its show's all movies card in main acording to search input value
